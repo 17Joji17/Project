@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="пекарня, заказ, выпечка, хлеб, торты">
+  <meta name="description" content="Раздел оформления заказа пекарни «Хлебный рай».">
+  <title>Пекарня «Хлебный рай» — Заказ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="order-page">
+
+<header>
+  <div class="header-top">
+    <div class="logo"><img src="images/images.png" alt="Логотип пекарни"></div>
+    <h1>Пекарня «Хлебный рай»</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="menu.html">Изделия</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="order.html">Заказ</a></li>
+      <li><a href="feedback.html">Отзывы</a></li>
+      <li><a href="network.html">Хлеб из Сети</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>Наши контакты</h2>
+    <p><strong>Адрес:</strong> г. Санкт-Петербург, ул. Вкусная, д. 12</p>
+    <p><strong>Телефон:</strong> +7 (999) 555-55-55</p>
+    <p><strong>Email:</strong> <a href="mailto:bakery@mail.com">bakery@mail.com</a></p>
+    <p><strong>Время работы:</strong> ежедневно с 8:00 до 21:00</p>
+  </section>
+
+  <section class="card">
+    <h3>Отзывы посетителей</h3>
+    <p>Оставьте свой отзыв о нашей пекарне! Он появится на странице сразу после отправки.</p>
+    <form id="feedback-form">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required placeholder="Введите имя">
+
+      <label for="comment">Ваш отзыв:</label>
+      <textarea id="comment" name="comment" required placeholder="Напишите отзыв..."></textarea>
+
+      <button type="submit">Добавить отзыв</button>
+    </form>
+  </section>
+
+  <section id="feedback-list" class="card">
+    <h4>Все отзывы:</h4>
+    <div id="feedback-container"></div>
+  </section>
+</main>
+
+
+<footer>
+  <h2>Контакты</h2>
+  <p>Email: <a href="mailto:bakery@mail.com">bakery@mail.com</a></p>
+  <p>Телефон: +7 (999) 555-55-55</p>
+  <p>Адрес: ул. Вкусная, 12</p>
+</footer>
+
+<template id="feedback-template">
+  <div class="feedback-item card">
+    <strong class="feedback-name"></strong>
+    <p class="feedback-text"></p>
+    <div class="feedback-buttons">
+      <button class="edit-btn">Редактировать</button>
+      <button class="delete-btn">Удалить</button>
+    </div>
+  </div>
+</template>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script type="module" src="js/pages/feedback-init.js"></script>
+
+</body>
+
+
+</html>

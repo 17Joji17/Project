@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="пекарня, заказ, выпечка, хлеб, торты">
+  <meta name="description" content="Раздел оформления заказа пекарни «Хлебный рай».">
+  <title>Пекарня «Хлебный рай» — Заказ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<body class="order-page">
+
+<header>
+  <div class="header-top">
+    <div class="logo"><img src="images/images.png" alt="Логотип пекарни"></div>
+    <h1>Пекарня «Хлебный рай»</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="menu.html">Изделия</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="order.html">Заказ</a></li>
+      <li><a href="feedback.html">Отзывы</a></li>
+      <li><a href="network.html">Хлеб из Сети</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Сделать заказ</h2>
+  <p>Заполните форму ниже — и мы свяжемся с вами для уточнения деталей.</p>
+
+  <section class="card">
+    <form id="order-form">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required placeholder="Введите имя">
+
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+
+      <label for="product">Выберите изделие:</label>
+      <select id="product" name="product" required>
+        <option value="">— Выберите —</option>
+        <option value="bread">Бородинский хлеб</option>
+        <option value="bun">Булочка с маком</option>
+        <option value="cake">Торт «Медовик»</option>
+      </select>
+
+      <label for="order-text">Комментарий к заказу:</label>
+      <textarea id="order-text" name="order-text" rows="5" placeholder="Укажите пожелания или количество..."></textarea>
+
+      <button type="submit">Отправить заказ</button>
+    </form>
+  </section>
+
+  <section class="card" id="order-message" style="display: none;">
+    <h3>Спасибо за заказ!</h3>
+    <p>Наш менеджер свяжется с вами в ближайшее время.</p>
+  </section>
+</main>
+
+<footer>
+  <h2>Контакты</h2>
+  <p>Email: <a href="mailto:bakery@mail.com">bakery@mail.com</a></p>
+  <p>Телефон: +7 (999) 555-55-55</p>
+  <p>Адрес: ул. Вкусная, 12</p>
+</footer>
+
+</body>
+</html>

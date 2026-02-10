@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="пекарня, хлеб, выпечка, булочки, торты, пироги">
+  <meta name="description" content="Сайт пекарни с хлебобулочными изделиями. Меню, каталог, контакты.">
+  <title>Пекарня «Хлебный рай» — Главная</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo"><img src="images/images.png" alt="Логотип пекарни"></div>
+    <h1>Пекарня «Хлебный рай»</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="menu.html">Изделия</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="order.html">Заказ</a></li>
+      <li><a href="feedback.html">Отзывы</a></li>
+      <li><a href="network.html">Хлеб из Сети</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="content-grid">
+    <section id="about" class="card">
+      <h2>О нашей пекарне</h2>
+      <p>Мы готовим <strong>свежий хлеб и булочки</strong> каждый день. Наша выпечка — из натуральных ингредиентов и с заботой о клиентах.</p>
+      <p>Мы печём вручную по традиционным рецептам.</p>
+    </section>
+
+    <aside>
+      <section class="card">
+        <h2>Цитата</h2>
+        <blockquote>«Хлеб — всему голова.»<br><cite>— Народная мудрость</cite></blockquote>
+      </section>
+
+      <section class="card">
+        <h3>Ссылки</h3>
+        <ul>
+          <li><a href="https://ru.wikipedia.org/wiki/Хлеб" target="_blank">Всё о хлебе</a></li>
+          <li><a href="https://eda.ru/" target="_blank">Рецепты</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <section id="menu" class="card">
+      <h2>Популярные изделия</h2>
+      <div class="gallery-grid">
+        <img src="images/bread1.png" alt="Хлеб">
+        <img src="images/cookie1.png" alt="Печенье">
+        <img src="images/cake1.png" alt="Торт">
+      </div>
+      <p>Больше товаров — на странице <a href="menu.html">Изделия</a>.</p>
+    </section>
+
+    <section id="price" class="card">
+      <h2>Цены</h2>
+      <table>
+        <thead>
+          <tr><th>Изделие</th><th>Цена</th><th>Наличие</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Бородинский хлеб</td><td>80 ₽</td><td>Есть</td></tr>
+          <tr><td>Булочка с маком</td><td>45 ₽</td><td>Есть</td></tr>
+          <tr><td>Торт "Медовик"</td><td>750 ₽</td><td>На заказ</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <h2>Контакты</h2>
+  <p>Email: <a href="mailto:bakery@mail.com">bakery@mail.com</a></p>
+  <p>Телефон: +7 (999) 555-55-55</p>
+  <p>Адрес: ул. Вкусная, 12</p>
+  
+  <div id="load-time-container"></div>
+</footer>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script type="module" src="js/pages/main-init.js"></script>
+
+</body>
+</html>

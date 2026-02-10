@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="пекарня, контакты, адрес, телефон, хлеб, торты">
+  <meta name="description" content="Контакты пекарни «Хлебный рай». Адрес, телефон, карта и форма обратной связи.">
+  <title>Пекарня «Хлебный рай» — Хлеб из сети</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/network.css">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo"><img src="images/images.png" alt="Логотип пекарни"></div>
+    <h1>Пекарня «Хлебный рай»</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="menu.html">Изделия</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="order.html">Заказ</a></li>
+      <li><a href="feedback.html">Отзывы</a></li>
+      <li><a href="network.html">Хлеб из Сети</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="content-grid">
+
+    <section class="card">
+      <h2>Каталог хлеба</h2>
+      <p>При нажатии кнопки мы получим:</p>
+      <ul>
+        <li>🥖 изображение хлеба</li>
+        <li>🍞 факт о хлебе</li>
+      </ul>
+      <p>Результат — красивая карточка с картинкой и фактом.</p>
+
+      <div class="controls">
+        <button id="load-btn" class="load-btn">Загрузить хлеб</button>
+        <div id="loader" class="bun-loader hidden" aria-hidden="true"></div>
+        <div id="status" class="status-text"></div>
+      </div>
+
+      <div id="error" class="error-text hidden"></div>
+    </section>
+
+    <aside>
+      <section class="card">
+        <video autoplay muted loop playsinline>
+          <source src="images/hleb.mp4" type="video/mp4">
+          <source src="images/hleb.webm" type="video/webm">
+          Ваш браузер не поддерживает видео тег.
+        </video>
+      </section>
+    </aside>
+
+    <section class="card wide-card">
+      <div id="cards" class="cards-grid"></div>
+    </section>
+
+  </div>
+
+  <template id="card-template">
+    <article class="card-item">
+      <img class="card-thumb" src="" alt="" loading="lazy">
+      <div class="card-body">
+        <h3 class="card-title"></h3>
+        <p class="card-desc">Описание хлеба недоступно (Хлеб печётся).</p>
+      </div>
+    </article>
+  </template>
+
+</main>
+
+<footer>
+  <h2>Контакты</h2>
+  <p>Email: <a href="mailto:bakery@mail.com">bakery@mail.com</a></p>
+  <p>Телефон: +7 (999) 555-55-55</p>
+  <p>Адрес: ул. Вкусная, 12</p>
+</footer>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script type="module" src="js/pages/network-init.js"></script>
+
+</body>
+</html>
